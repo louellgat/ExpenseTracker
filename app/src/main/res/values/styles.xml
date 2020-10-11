@@ -13,6 +13,11 @@
     <item name="android:textSize">@dimen/transaction_title_size</item>
     <item name="android:layout_marginLeft">@dimen/transaction_hor_margin</item>
     <item name="android:layout_marginRight">@dimen/transaction_hor_margin</item>
+    <item name="android:layout_width">@dimen/_100sdp</item>
   </style>
-
+  <style name="transaction_values" parent="Widget.AppCompat.TextView">
+    <item name="android:textColor">@color/mainText</item>
+    <item name="android:textSize">@dimen/transaction_title_size</item>
+    <item name="android:layout_marginStart">@dimen/_10sdp</item>
+  </style>
 </resources>

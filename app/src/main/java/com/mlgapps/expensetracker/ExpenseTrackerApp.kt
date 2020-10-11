@@ -2,6 +2,7 @@ package com.mlgapps.expensetracker
 
 import android.app.Application
 import com.louellgat.ecereviewmaster.database.EncryptedRealm
+import com.mlgapps.expensetracker.managers.AccountManager
 import com.mlgapps.expensetracker.managers.CategoriesManager
 import com.mlgapps.expensetracker.prefs.Prefs
 
@@ -11,7 +12,8 @@ class ExpenseTrackerApp : Application(){
         super.onCreate()
         EncryptedRealm.realmWithEncryptionInit(this)
         Prefs.initialize(applicationContext)
-        CategoriesManager.addDefaultCategories()
+        CategoriesManager.addDefaults()
+        AccountManager.addDefaults()
 
     }
 

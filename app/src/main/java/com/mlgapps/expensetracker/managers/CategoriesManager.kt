@@ -21,7 +21,7 @@ object CategoriesManager {
         )
     }
 
-    fun addDefaultCategories() {
+    fun addDefaults() {
         val realm = Realm.getDefaultInstance()
         val categories = realm.where<Category>().findAll()
         if (categories.size <= 0) {

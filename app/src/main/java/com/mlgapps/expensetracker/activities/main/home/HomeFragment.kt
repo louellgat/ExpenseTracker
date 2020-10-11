@@ -7,7 +7,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.mlgapps.expensetracker.R
-import com.mlgapps.expensetracker.activities.TransactionActivity
+import com.mlgapps.expensetracker.activities.main.transaction.TransactionActivity
 
 class HomeFragment : Fragment() {
 
@@ -32,7 +32,7 @@ class HomeFragment : Fragment() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.add_menu->{
-                startActivity(Intent(requireActivity(),TransactionActivity::class.java))
+                startActivity(Intent(requireActivity(), TransactionActivity::class.java))
             }
         }
         return super.onOptionsItemSelected(item)

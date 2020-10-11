@@ -50,6 +50,9 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
+    implementation 'net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:3.0.0-RC2'
+    implementation 'com.afollestad.material-dialogs:datetime:3.3.0'
+    implementation 'com.afollestad.material-dialogs:lifecycle:3.3.0'
     implementation 'com.intuit.sdp:sdp-android:1.0.6' // scalable dp
     implementation("io.github.esentsov:kotlin-visibility:1.1.0") // package private
     implementation 'com.jakewharton:process-phoenix:2.0.0'
